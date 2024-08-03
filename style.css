@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    background-image: url("https://cdn.pixabay.com/animation/2024/07/23/19/52/19-52-56-478_512.gif");
+    background-position: 100% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #131a9b79;
+    border-radius: 15%;
+    max-width: 450px;
+    width: 80%;
+  }
+  
+  form {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+  }
+  
+  #name, #email, #password {
+    color: #A7E6FF;
+    font-size: 40px;
+  }
+  
+  .container form div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #3572EF;
+    border-bottom: 2px solid white;
+  }
+  
+  input:focus {
+    background-color: #A7E6FF;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  
+  input::after {
+    content: '';
+    display: block;
+    background-color: transparent;
+  }
+  
+  .btn {
+    background-color: #3ABEF9;
+    font-size: 40px;
+    border-radius: 10%;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Media queries */
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    .btn {
+      font-size: 30px;
+    }
+    input {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 5px;
+    }
+    .btn {
+      font-size: 20px;
+    }
+    input {
+      font-size: 15px;
+    }
+    .container form div {
+      flex-direction: column;
+      align-items: center;
+    }
+    input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .container {
+      padding: 0;
+    }
+    .btn {
+      font-size: 15px;
+    }
+    input {
+      font-size: 10px;
+    }
+  }
